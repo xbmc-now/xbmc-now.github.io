@@ -1,0 +1,19 @@
+<html><head>
+<script src="js/openseadragon.js"></script>
+<script src="js/openseadragon-bookmark-url.js"></script>
+</head><body>
+<!-- 画像ビューアを表示させるDIV -->
+<div id="contentDiv"></div>
+
+<script type="text/javascript">
+    var viewer = OpenSeadragon({
+        id:              "contentDiv",
+        prefixUrl:       "2434map_Nether_files/",
+        tileSources:     "2434map_Nether.dzi",
+        showNavigator:  true
+    });
+    viewer.bookmarkUrl();
+</script>
+
+</body>
+</html>

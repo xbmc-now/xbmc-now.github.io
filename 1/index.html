@@ -1,0 +1,21 @@
+<html><head>
+<script src="js/openseadragon.js"></script>
+<script src="js/openseadragon-bookmark-url.js"></script>
+</head><body>
+<!-- 画像ビューアを表示させるDIV -->
+<div id="contentDiv"></div>
+
+<script type="text/javascript">
+    var viewer = OpenSeadragon({
+        id:              "contentDiv",
+        prefixUrl:       "2434map_files/",
+        tileSources:     ["2434map.dzi", "2434map_all2.dzi", "2434map_Nether.dzi"],
+        showNavigator:  true,
+        sequenceMode:           true,
+        showReferenceStrip:     true
+    });
+    viewer.bookmarkUrl();
+</script>
+
+</body>
+</html>
